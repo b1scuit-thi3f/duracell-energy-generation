@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Duracell Energy account",
+        "description": "Enter your Duracell Energy login details.",
+        "data": {
+          "member_id": "Member ID",
+          "password": "Password"
+        }
+      },
+      "inverter": {
+        "title": "Select Duracell inverter",
+        "description": "Choose the inverter to add to Home Assistant. You may also give it a friendly name.",
+        "data": {
+          "goods_id": "Inverter",
+          "inverter_name": "Friendly name"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid Duracell credentials.",
+      "cannot_connect": "Could not connect to the Duracell API.",
+      "no_inverters": "No Duracell inverters were found for this account.",
+      "invalid_inverter": "The selected inverter could not be found.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This Duracell inverter is already configured."
+    }
+  }
+}

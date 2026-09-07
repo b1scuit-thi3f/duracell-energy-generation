@@ -1,0 +1,122 @@
+refresh_today:
+  name: Refresh today
+  description: Force refresh today's Duracell 5-minute day data.
+
+refresh_month:
+  name: Refresh month
+  description: Force refresh the current month's Duracell daily summary data.
+
+backfill_day:
+  name: Backfill day
+  description: Fetch and store Duracell 5-minute data for a specific date.
+  fields:
+    date:
+      name: Date
+      description: Date to fetch in YYYY-MM-DD format.
+      required: true
+      example: "2026-07-07"
+      selector:
+        date:
+
+refresh_schedule:
+  name: Refresh schedule
+  description: Force refresh Duracell import/export schedule registers.
+
+set_schedule:
+  name: Set schedule
+  description: Set one or more values on a Duracell inverter schedule.
+  fields:
+    schedule:
+      name: Schedule
+      description: The schedule to update.
+      required: true
+      selector:
+        number:
+          min: 1
+          max: 3
+          step: 1
+          mode: box
+
+    frequency:
+      name: Frequency
+      description: Set the schedule frequency.
+      required: false
+      selector:
+        select:
+          options:
+            - "Once"
+            - "Everyday"
+
+    charge_start_time:
+      name: Charge start time
+      description: Set the charge period start time.
+      required: false
+      selector:
+        time:
+
+    charge_end_time:
+      name: Charge end time
+      description: Set the charge period end time.
+      required: false
+      selector:
+        time:
+
+    charge_power_w:
+      name: Charge power
+      description: Set the charge power in watts.
+      required: false
+      selector:
+        number:
+          min: 0
+          step: 1
+          unit_of_measurement: W
+          mode: box
+
+    charge_end_soc_percent:
+      name: Charge end SOC
+      description: Set the battery state of charge at which charging ends.
+      required: false
+      selector:
+        number:
+          min: 0
+          max: 100
+          step: 1
+          unit_of_measurement: "%"
+          mode: box
+
+    discharge_start_time:
+      name: Discharge start time
+      description: Set the discharge period start time.
+      required: false
+      selector:
+        time:
+
+    discharge_end_time:
+      name: Discharge end time
+      description: Set the discharge period end time.
+      required: false
+      selector:
+        time:
+
+    discharge_power_w:
+      name: Discharge power
+      description: Set the discharge power in watts.
+      required: false
+      selector:
+        number:
+          min: 0
+          step: 1
+          unit_of_measurement: W
+          mode: box
+
+    discharge_end_soc_percent:
+      name: Discharge end SOC
+      description: Set the battery state of charge at which discharging ends.
+      required: false
+      selector:
+        number:
+          min: 0
+          max: 100
+          step: 1
+          unit_of_measurement: "%"
+          mode: box

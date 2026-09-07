@@ -1,0 +1,11 @@
+{
+  "domain": "duracell_energy_generation",
+  "name": "Duracell Energy Generation",
+  "codeowners": ["@b1scuit-thi3f"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/b1scuit-thi3f/duracell_energy_generation",
+  "iot_class": "cloud_polling",
+  "requirements": ["pycryptodomex>=3.20.0"],
+  "version": "0.1.0"
+}
