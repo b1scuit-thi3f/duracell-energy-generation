@@ -13,9 +13,10 @@ Home Assistant custom integration for Duracell Energy monitoring systems.
 
 ## Installation
 
-Install through HACS by adding this repository as a custom repository, or copy
-`custom_components/duracell_energy_generation` into your Home Assistant
-`custom_components` directory.
+Install through HACS by adding
+`b1scuit-thi3f/duracell-energy-generation` as a custom repository with category
+**Integration**, or copy `custom_components/duracell_energy_generation` into
+your Home Assistant `custom_components` directory.
 
 Then restart Home Assistant and add **Duracell Energy Generation** from
 Settings > Devices & services.
@@ -45,6 +46,13 @@ data:
 ## Requirements
 
 The integration installs `pycryptodomex` automatically from its manifest.
+
+The integration requires Home Assistant 2026.9.1 or newer.
+
+## Support
+
+Report bugs and request features in the
+[GitHub issue tracker](https://github.com/b1scuit-thi3f/duracell-energy-generation/issues).
 
 ## Disclaimer
 
