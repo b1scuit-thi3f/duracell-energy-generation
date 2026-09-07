@@ -251,20 +251,6 @@ async def async_setup_entry(
                 "Online",
                 "mdi:access-point-network",
             ),
-            DuracellRealtimeSensor(
-                entry,
-                realtime_coordinator,
-                "SOC",
-                "Real-time Battery State of Charge",
-                "mdi:battery",
-            ),
-            DuracellRealtimeSensor(
-                entry,
-                realtime_coordinator,
-                "gridCurrpac",
-                "Real-time Grid Power",
-                "mdi:transmission-tower",
-            ),
             DuracellDeviceSummarySensor(entry, diagnostics_coordinator),
             DuracellYearSensor(
                 entry, yearly_coordinator, "production_kwh", "Year Production"
